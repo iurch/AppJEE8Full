@@ -9,7 +9,7 @@ import javax.persistence.PersistenceUnit;
 
 public class EntityManagerProducer {
 
-	@PersistenceUnit
+	@PersistenceUnit(name = "app")
 	private EntityManagerFactory entityManagerFactory;
 	
 	
