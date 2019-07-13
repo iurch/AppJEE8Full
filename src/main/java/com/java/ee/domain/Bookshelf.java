@@ -54,4 +54,8 @@ public class Bookshelf {
 		entityManager.remove(reference);
 	}
 
+	public boolean exist(String isbn) {
+		return false;
+	}
+
 }

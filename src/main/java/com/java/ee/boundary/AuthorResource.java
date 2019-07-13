@@ -15,7 +15,6 @@ public class AuthorResource {
 		this.book = book;
 	}
 	
-	
 	@GET
 	public Author get() {
 		return book.getAuthor();

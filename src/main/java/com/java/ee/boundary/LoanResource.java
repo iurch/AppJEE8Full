@@ -48,14 +48,13 @@ public class LoanResource {
 	
 	
 	@GET
-	@Path("{loanId}")
 	public Response loan(@PathParam("loanId") String loanId) {
 		Loan loan = library.loanInfo(loanId);
 		return Response.ok(loan).build();
 	}
 	
 	@DELETE
-	@Path("{loanId}")
+	@Path("/{loanId}")
 	public Response returnBook(@PathParam("loanId") String loanId) {
 		library.returnBook(isbn, loanId);
 		return Response.ok().build();
