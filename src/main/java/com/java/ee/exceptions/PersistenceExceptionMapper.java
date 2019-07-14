@@ -22,7 +22,7 @@ public class PersistenceExceptionMapper implements ExceptionMapper<PersistenceEx
             return Response.status(Response.Status.NOT_FOUND).build();
         } 
 
-        Map<String, String> response = new HashMap();
+        Map<String, String> response = new HashMap<>();
         response.put("code", "ERR-GENERAL");
         response.put("type", "DATABASE");
         response.put("message", exception.getMessage());

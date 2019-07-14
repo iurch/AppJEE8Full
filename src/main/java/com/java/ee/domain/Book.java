@@ -57,8 +57,8 @@ public class Book {
 		return author;
 	}
 
-	public void setAuthor(Author author) {
-		this.author = author;
+	public void setAuthor(Author object) {
+		this.author = object;
 	}
 
 	
@@ -88,5 +88,10 @@ public class Book {
 	@Override
 	public String toString() {
 		return "Book [isbn=" + isbn + ", title=" + title + ", author=" + author + "]";
+	}
+
+	public Book(String isbn, String title) {
+		this.isbn = isbn;
+		this.title = title;
 	}
 }
