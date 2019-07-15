@@ -90,6 +90,8 @@ public class Book {
 		return "Book [isbn=" + isbn + ", title=" + title + ", author=" + author + "]";
 	}
 
+	public Book() {}
+	
 	public Book(String isbn, String title) {
 		this.isbn = isbn;
 		this.title = title;

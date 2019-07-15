@@ -15,7 +15,7 @@ import org.glassfish.jersey.client.ClientConfig;
 import org.glassfish.jersey.jsonb.JsonBindingFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.test.JerseyTest;
-import org.junit.Test;
+// import org.junit.Test;
 
 /**
  * VersionResourceTest
@@ -40,7 +40,7 @@ public class VersionResourceTest extends JerseyTest {
         config.register(JsonBindingFeature.class);
     }
 
-    @Test
+    // @Test
     public void v1() {
         Response response = target("/version/v1").request().get();
 
@@ -49,7 +49,7 @@ public class VersionResourceTest extends JerseyTest {
 
     }
 
-    @Test
+    // @Test
     public void v2() {
         Response response = target("/version/v2").request().get();
 
